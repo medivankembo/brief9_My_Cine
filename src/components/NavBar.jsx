@@ -5,11 +5,11 @@ import { NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
     <>
-      <nav className="navbar navbar-dark bg-dark d-flex px-3 fixed">
-        <a className="navbar-brand" href="logo">
+      <nav className="navbar navbar-dark bg-dark px-3 fixed">
+{/*         <a className="navbar-brand" href="http://localhost:3000/">
           LOGO
         </a>
-        <SearchInput />
+        <SearchInput /> */}
 
         <button
           className="navbar-toggler p-0 text-center"
@@ -27,20 +27,26 @@ const NavBar = () => {
       </nav>
       <div className="collapse" id="navbarToggleExternalContent">
         <ul className="bg-dark p-4">
-          <NavLink className="text-white h5" to="/">
+          <NavLink className="text-white h5 d-block p-2 align-items-end" to="/">
             Home
           </NavLink>
-          <NavLink className="text-white h5" to="/movies">
+          <NavLink className="text-white h5 d-block p-2" to="/movies">
             Movies
           </NavLink>
-          <NavLink className="text-white h5" to="/series">
+          <NavLink className="text-white h5 d-block p-2" to="/series">
             Series
           </NavLink>
-          <NavLink className="text-white h5" to="/tv-show">
+          <NavLink className="text-white h5 d-block p-2" to="/tv-show">
             Tv Show
           </NavLink>
-          <NavLink className="text-white h5" to="/stars">
+          <NavLink className="text-white h5 d-block p-2" to="/kids">
+            Kids
+          </NavLink>
+          <NavLink className="text-white h5 d-block p-2" to="/stars">
             Stars
+          </NavLink>
+          <NavLink className="text-white h5 d-block p-2" to="/news">
+            News
           </NavLink>
         </ul>
       </div>
@@ -49,25 +55,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-/*
-<div class="collapse" id="navbarToggleExternalContent">
-  <div class="bg-dark p-4">
-    <h5 class="text-white h4">Collapsed content</h5>
-    <span class="text-muted">Toggleable via the navbar brand.</span>
-  </div>
-</div>
-<nav class="navbar navbar-dark bg-dark">
-  <div class="container-fluid">
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#navbarToggleExternalContent"
-      aria-controls="navbarToggleExternalContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i class="fas fa-bars"></i>
-    </button>
-  </div>
-</nav> */

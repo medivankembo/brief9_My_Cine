@@ -1,15 +1,44 @@
+@import 'variables';
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
-    box-sizing: border-box;
-    background-color: #4f4f4f
+  box-sizing: border-box;
+  .home{
+    background-color: $primary-color;
+    .navigbar{
+      background-color: $second-color;
+      .carousel{
+        background-color: $primary-color;
+      }
+    }
+
+  }
 }
-.input-group{
-    width: 500px;
+.input-group {
+  width: 500px;
 }
-.sous-titre{
+.sous-titre {
   padding: 0;
+}
+
+
+.btn-floating:hover{
+color: #f39010;
+transform: scale(1.08);
+border-color: #f39010;
+}
+
+.section{
+  background-color: #010024;
+  margin-bottom: 3%;
+}
+
+.section:nth-child(odd){
+  background-color: #b8b8b8;
+}
+footer{
+  background-color: $primary-color;
 }

@@ -1,11 +1,11 @@
 import React from "react";
 import MenuTitle from "./MenuTitle";
 
-function PresentationOfMenu() {
+function Carousel() {
   return (
     <div
       id="carouselDarkVariant"
-      className="container carousel slide carousel-fade carousel-dark p-2 mt-5"
+      className="container carousel slide carousel-fade carousel-dark pt-5"
       data-mdb-ride="carousel"
     >
       <div className="carousel-indicators">
@@ -90,4 +90,4 @@ function PresentationOfMenu() {
   );
 }
 
-export default PresentationOfMenu;
+export default Carousel;

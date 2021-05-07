@@ -2,17 +2,16 @@ import React from "react";
 
 function SubMenuList() {
   return (
-    <div className="container">
-      <div className="row text-white sous-titre pb-3">
-        <div className="col-md-2 col-sm-4 text-center">Now playing</div>
-        <div className="col-md-2 col-sm-4 text-center">Popular</div>
-        <div className="col-md-2 col-sm-4 text-center">Upcoming</div>
-        <div className="col-md-2 col-sm-4 text-center">Top rated</div>
-        <div className="col-md-2 col-sm-4 text-center">Kids</div>
-        <div className="col-md-2 col-sm-4 text-center">News</div>
-      </div>
+    <div class="container button-group-horizontal justify-content-center" role="group">
+      <button type="button" class="flex-fill text-center btn btn-dark">Now playing</button>
+      <button type="button" class="flex-fill text-center btn btn-dark">Popular</button>
+      <button type="button" class="flex-fill text-center btn btn-dark">Top rated</button>
+      <button type="button" class="flex-fill text-center btn btn-dark">Kids</button>
+      <button type="button" class="flex-fill text-center btn btn-dark">News</button>
     </div>
   );
 }
 
 export default SubMenuList;
+
+

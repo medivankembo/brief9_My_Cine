@@ -1,5 +1,6 @@
 import React from "react";
-import PresentationOfMenu from "../components/PresentationOfMenu";
+import PresentationOfMenu from "../components/Carousel";
+import SectionsOfMenu from "../components/SectionsOfMenu";
 import SubMenuList from "../components/SubMenuList";
 import TitleOfMenu from "../components/TitleOfMenu";
 
@@ -9,6 +10,7 @@ function Series() {
           <TitleOfMenu title="SERIES" />
           <PresentationOfMenu />
           <SubMenuList />
+          <SectionsOfMenu />
         </div>
       );
 }

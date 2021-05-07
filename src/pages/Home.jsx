@@ -1,16 +1,15 @@
 import React from "react";
 import SubMenuList from "../components/SubMenuList";
 import TitleOfMenu from "../components/TitleOfMenu";
-import PresentationOfMenu from "../components/PresentationOfMenu";
-import SectionOfMenu from "../components/SectionOfMenu";
+import PresentationOfMenu from "../components/Carousel";
+import Footer from "../components/Footer";
+import SectionsOfMenu from "../components/SectionsOfMenu";
 
 function Home() {
   return (
-    <div>
-      <TitleOfMenu title="HOME" />
+    <div className="home">
       <PresentationOfMenu />
-      <SubMenuList />
-      <SectionOfMenu />
+      <Footer />
     </div>
   );
 }
