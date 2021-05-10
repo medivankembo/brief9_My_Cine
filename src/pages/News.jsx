@@ -1,11 +1,15 @@
-import React from 'react'
+import Footer from "../components/Footer";
+import HeadOhAMenu from "../components/HeadOhAMenu";
+import SectionsOfMenu from "../components/SectionsOfMenu";
 
 function News() {
-    return (
-        <div>
-            
-        </div>
-    )
+  return (
+    <div>
+      <HeadOhAMenu menuTitle="NEWS" />
+      <SectionsOfMenu />
+      <Footer />
+    </div>
+  );
 }
 
-export default News
+export default News;

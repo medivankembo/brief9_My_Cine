@@ -5,8 +5,8 @@ import Carousel from './Carousel'
 
 function HeadOhAMenu({menuTitle}) {
     return (
-        <div>
-            <MenuTitle menuTitle = {menuTitle}/>
+        <div className="page-presentation">
+            <MenuTitle className="" menuTitle = {menuTitle}/>
             <SubMenuList />
             <Carousel />
         </div>

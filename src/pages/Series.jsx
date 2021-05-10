@@ -1,18 +1,13 @@
-import React from "react";
-import PresentationOfMenu from "../components/Carousel";
+import Footer from "../components/Footer";
 import SectionsOfMenu from "../components/SectionsOfMenu";
-import SubMenuList from "../components/SubMenuList";
-import TitleOfMenu from "../components/TitleOfMenu";
 
 function Series() {
-    return (
-        <div>
-          <TitleOfMenu title="SERIES" />
-          <PresentationOfMenu />
-          <SubMenuList />
-          <SectionsOfMenu />
-        </div>
-      );
+  return (
+    <div>
+      <SectionsOfMenu menuTitle="SERIES" />
+      <Footer />
+    </div>
+  );
 }
 
 export default Series;

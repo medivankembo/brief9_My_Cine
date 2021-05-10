@@ -1,20 +1,15 @@
-import React from 'react'
-import PresentationOfMenu from '../components/Carousel';
-import SectionsOfMenu from '../components/SectionsOfMenu';
-import SubMenuList from '../components/SubMenuList';
-import TitleOfMenu from '../components/TitleOfMenu';
+import Footer from "../components/Footer";
+import SectionsOfMenu from "../components/SectionsOfMenu";
 
-function Stars(){
-    return (
-        <div>
-            <div>
-                <TitleOfMenu title="STARS" />
-                <PresentationOfMenu />
-                <SubMenuList />
-                <SectionsOfMenu />
-            </div>
-        </div>
-    )
+function Stars() {
+  return (
+    <div>
+      <div>
+        <SectionsOfMenu menuTitle="STARS" />
+        <Footer />
+      </div>
+    </div>
+  );
 }
 
 export default Stars;

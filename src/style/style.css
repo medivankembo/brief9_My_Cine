@@ -4,19 +4,34 @@
   padding: 0; }
 
 body {
-  box-sizing: border-box; }
-  body .home {
-    background-color: #010024; }
-    body .home .navigbar {
-      background-color: #f39010; }
-      body .home .navigbar .carousel {
-        background-color: #010024; }
+  background-color: #010024; }
 
-.input-group {
-  width: 500px; }
+/*   box-sizing: border-box;
+    .head{
+      background-color: $primary-color;
+      .input-group {
+        width: 500px;
+      }
+    }
+    .page{
+      .page-presentation{
+        background-color: $primary-color;
+        display: none;
+      }
+      .page-sections{
 
-.sous-titre {
-  padding: 0; }
+      }
+      .page-footer{
+
+      }
+    }
+
+
+  }
+ */
+.page-presentation {
+  background-color: #010024;
+  width: 100%; }
 
 .btn-floating:hover {
   color: #f39010;

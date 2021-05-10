@@ -5,25 +5,38 @@
   padding: 0;
 }
 body {
-  box-sizing: border-box;
-  .home{
-    background-color: $primary-color;
-    .navigbar{
-      background-color: $second-color;
-      .carousel{
+  background-color: $primary-color;
+}
+/*   box-sizing: border-box;
+    .head{
+      background-color: $primary-color;
+      .input-group {
+        width: 500px;
+      }
+    }
+    .page{
+      .page-presentation{
         background-color: $primary-color;
+        display: none;
+      }
+      .page-sections{
+
+      }
+      .page-footer{
+
       }
     }
 
-  }
-}
-.input-group {
-  width: 500px;
-}
-.sous-titre {
-  padding: 0;
-}
 
+  }
+ */
+  .page-presentation{
+    background-color: $primary-color;
+    width: 100%;
+    .title-of-a-menu{
+      
+    }
+  }
 
 .btn-floating:hover{
 color: #f39010;

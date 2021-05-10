@@ -1,10 +1,13 @@
-import React from 'react'
+import Footer from "../components/Footer";
+import SectionsOfMenu from "../components/SectionsOfMenu";
+
 
 function Kids() {
     return (
         <div>
-            
-        </div>
+      <SectionsOfMenu menuTitle = "KIDS"/>
+      <Footer />
+    </div>
     )
 }
 

@@ -1,5 +1,4 @@
 import React from "react";
-import MenuTitle from "./MenuTitle";
 
 function Carousel() {
   return (
@@ -36,8 +35,11 @@ function Carousel() {
             alt="..."
           />
           <div className="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h5>Film Title</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusamus rem nisi ratione
+            </p>
           </div>
         </div>
 
@@ -48,8 +50,11 @@ function Carousel() {
             alt="..."
           />
           <div className="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h5>Film Title</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusamus rem nisi ratione
+            </p>
           </div>
         </div>
 
@@ -60,9 +65,10 @@ function Carousel() {
             alt="..."
           />
           <div className="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
+            <h5>Film Title</h5>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusamus rem nisi ratione
             </p>
           </div>
         </div>

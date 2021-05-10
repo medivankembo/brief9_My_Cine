@@ -2,8 +2,8 @@ import React from "react";
 import Card from "./Card";
 import SubMenuTitle from "./SubMenuTitle";
 
-function ASectionOfMenu({ movies, subMenuTitle, message, className }) {
-  console.log(movies);
+function ASectionOfMenu({popularmovies, movies, subMenuTitle, message, className }) {
+  console.log(popularmovies);
   return (
     <div className="container-fluid">
       <div className={className}>
