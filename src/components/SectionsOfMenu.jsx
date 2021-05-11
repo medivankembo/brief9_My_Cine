@@ -2,16 +2,40 @@ import React from "react";
 import ASectionOfMenu from "./ASectionOfMenu";
 import HeadOhAMenu from "./HeadOhAMenu";
 
-function SectionsOfMenu({menuTitle,popularmovies}) {
+function SectionsOfMenu({
+  nowPlayingMovies,
+  popularMovies,
+  ratedMovies,
+  upComingMovies,
+  menuTitle,
+  subMenuTitle1,
+  subMenuTitle2,
+  subMenuTitle3,
+  subMenuTitle4,
+}) {
   return (
-
     <div className="container">
-      <HeadOhAMenu menuTitle = {menuTitle} />
-      <ASectionOfMenu className="section p-4" title="Now playing" message= "The Most searched of the moment" popularmovies={popularmovies}/>
-      <ASectionOfMenu className="section p-4" title="Popular" message= "Most popular" />
-      <ASectionOfMenu className="section p-4" title="Top rated" message= "Most rated"/>
-      <ASectionOfMenu className="section p-4" title="Kids" message= "That can interest children"/>
-      <ASectionOfMenu className="section p-4" title="News" message= "Get important informations about the cinema world"/>     
+      <HeadOhAMenu menuTitle={menuTitle} />
+      <ASectionOfMenu
+        className="section p-4 m-5"
+        subMenuTitle={subMenuTitle1}
+        data={nowPlayingMovies}
+      />
+      <ASectionOfMenu
+        className="section p-4"
+        subMenuTitle={subMenuTitle2}
+        data={popularMovies}
+      />
+      <ASectionOfMenu
+        className="section p-4"
+        subMenuTitle={subMenuTitle3}
+        data={upComingMovies}
+      />
+      <ASectionOfMenu
+        className="section p-4"
+        subMenuTitle={subMenuTitle4}
+        data={ratedMovies}
+      />
     </div>
   );
 }

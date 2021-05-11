@@ -1,6 +1,6 @@
 import React from "react";
 
-function Card() {
+function Card({title, srcImage}) {
   return (
     <div
       className="card text-center border border-primary shadow-0 m-3 hover-zoom"
@@ -13,7 +13,7 @@ function Card() {
         data-mdb-ripple-color="ligth"
       >
         <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.jpg"
+          src={srcImage}
           className="img-fluid"
         />
         <a href="#!">
@@ -21,7 +21,7 @@ function Card() {
         </a>
       </div>
       <div className="card-body">
-        <h5 className="card-title">Title</h5>
+        <h5 className="card-title">{title}</h5>
         <p className="card-text">
           Some quick example text to build on the card title and make up the
           bulk of the card's content.

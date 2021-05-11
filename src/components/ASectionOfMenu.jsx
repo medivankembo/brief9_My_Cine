@@ -2,27 +2,22 @@ import React from "react";
 import Card from "./Card";
 import SubMenuTitle from "./SubMenuTitle";
 
-function ASectionOfMenu({popularmovies, movies, subMenuTitle, message, className }) {
-  console.log(popularmovies);
+function ASectionOfMenu({data, subMenuTitle, className }) {
   return (
-    <div className="container-fluid">
+    <div className="container">
       <div className={className}>
         <div className="row">
-          <SubMenuTitle subMenuTitle={subMenuTitle} message={message} />
+          <SubMenuTitle subMenuTitle={subMenuTitle} />
         </div>
         <div className="row">
-          <div className="col-sm-12 col-md-3">
-            <Card />
-          </div>
-          <div className="col-sm-12 col-md-3">
-            <Card />
-          </div>
-          <div className="col-sm-12 col-md-3">
-            <Card />
-          </div>
-          <div className="col-sm-12 col-md-3">
-            <Card />
-          </div>
+         { data ? data.map((movie) => {
+           
+          return ( 
+             <div className="col-sm-12 col-md-3">
+              <Card title={movie.title} srcImage={"https://image.tmdb.org/t/p/original" + movie.poster_path} />
+            </div>)
+          }) : " "
+        }
         </div>
       </div>
     </div>
