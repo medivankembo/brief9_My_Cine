@@ -17,7 +17,7 @@ function SectionsOfMenu({
     <div className="container">
       <HeadOhAMenu menuTitle={menuTitle} />
       <ASectionOfMenu
-        className="section p-4 m-5"
+        className="section p-4 m-2"
         subMenuTitle={subMenuTitle1}
         data={nowPlayingMovies}
       />
