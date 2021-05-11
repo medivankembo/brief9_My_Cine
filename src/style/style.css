@@ -6,6 +6,9 @@
 body {
   background-color: #010024; }
 
+.application {
+  background-color: #010024; }
+
 /*   box-sizing: border-box;
     .head{
       background-color: $primary-color;

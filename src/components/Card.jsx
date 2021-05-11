@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Card({title, srcImage}) {
+function Card({title, srcImage, linkShowDetail}) {
   return (
+    <Link to={linkShowDetail}>
     <div
       className="card text-center border border-primary shadow-0 m-3 hover-zoom"
       data-mdb-toggle="animation"
@@ -32,6 +34,7 @@ function Card({title, srcImage}) {
         </button>
       </div>
     </div>
+    </Link>
   );
 }
 

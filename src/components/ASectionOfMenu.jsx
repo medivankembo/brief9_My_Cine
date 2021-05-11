@@ -3,9 +3,9 @@ import Card from "./Card";
 import Pagination from "./Pagination";
 import SubMenuTitle from "./SubMenuTitle";
 
-function ASectionOfMenu({ data, subMenuTitle, className }) {
+function ASectionOfMenu({ data, subMenuTitle, className, linkShowDetail}) {
   return (
-    <div className="container-fluid">
+    <div className="container">
       <div className={className}>
         <div className="row">
           <SubMenuTitle subMenuTitle={subMenuTitle} />
@@ -21,6 +21,7 @@ function ASectionOfMenu({ data, subMenuTitle, className }) {
                         "https://image.tmdb.org/t/p/original" +
                         movie.poster_path
                       }
+                      linkShowDetail={linkShowDetail}
                     />
                   </div>
                 );

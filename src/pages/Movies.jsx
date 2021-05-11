@@ -21,6 +21,7 @@ function Movies() {
         subMenuTitle2 = "Popular"
         subMenuTitle3 = "Upcoming"
         subMenuTitle4 = "Top rated"
+        linkShowDetail="/movies/show-detail"
         popularMovies={popularMovies}
         ratedMovies={ratedMovies}
         upComingMovies={upComingMovies}

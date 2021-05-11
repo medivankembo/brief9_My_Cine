@@ -1,6 +1,6 @@
 function Pagination() {
   return (
-    <div className="row pt-5">
+    <div className="row pt-2">
       <nav aria-label="...">
         <ul class="pagination pagination-circle justify-content-center">
           <li class="page-item">
